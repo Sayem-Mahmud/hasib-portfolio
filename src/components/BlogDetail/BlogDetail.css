@@ -1,0 +1,101 @@
+.hov :hover {
+    box-shadow: 0 0 11px rgb(107, 107, 107);
+    transform: scale(1.01);
+}
+
+.hovNot :hover {
+    transform: scale(1);
+    box-shadow: 0 0 0px rgb(107, 107, 107);
+
+}
+
+.hovN :hover {
+    color: #bac964;
+}
+
+@media only screen and (min-width:768px)and (max-width: 991px) {
+    .image {
+        height: 304px !important;
+        width: 100% !important;
+    }
+
+    .box {
+        /* height: 301px !important; */
+        width: 304px !important;
+    }
+
+}
+
+@media only screen and (min-width:992px) and (max-width: 1199px) {
+    .image {
+        height: 284px !important;
+        width: 100% !important;
+    }
+
+    .box {
+        /* height: 301px !important; */
+        width: 284px !important;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width: 689px) {
+    .image {
+        height: 244px !important;
+        width: 100% !important;
+    }
+
+    .box {
+        /* height: 301px !important; */
+        width: 244px !important;
+    }
+}
+
+@media only screen and (min-width:690px) and (max-width: 767px) {
+    .image {
+        height: 294px !important;
+        width: 100% !important;
+    }
+
+    .box {
+        /* height: 301px !important; */
+        width: 294px !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .image {
+        /* height: 100% !important; */
+        width: 100% !important;
+    }
+
+    .box {
+        /* height: 100% !important; */
+        width: 100% !important;
+    }
+
+    .hov :hover {
+        box-shadow: 0 0 0px rgb(107, 107, 107);
+        /* transform: scale(1); */
+    }
+
+    /* .hovNot :hover {
+        transform: scale(1);
+        box-shadow: 0 0 0px rgb(107, 107, 107);
+
+    } */
+
+}
+
+@media only screen and (min-width:1200px) {
+    .image {
+        height: 333px !important;
+        width: 100% !important;
+    }
+
+    .box {
+        /* height: 301px !important; */
+        width: 333px !important;
+    }
+
+
+}
