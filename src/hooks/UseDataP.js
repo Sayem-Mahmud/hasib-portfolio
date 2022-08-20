@@ -4,7 +4,7 @@ const UseDataP = () => {
     const [portfolios, setPortfolios] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/portfolios')
+        fetch('https://dry-peak-89227.herokuapp.com/portfolios')
             .then(res => res.json())
             .then(data => {
                 setPortfolios(data)

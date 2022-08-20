@@ -76,7 +76,7 @@ const AddBP = () => {
             img8, description8, description8bold
         };
         console.log(addedPortfolios);
-        fetch(`http://localhost:5000/portfolio`, {
+        fetch(`https://dry-peak-89227.herokuapp.com/portfolio`, {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

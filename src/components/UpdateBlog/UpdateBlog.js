@@ -83,7 +83,7 @@ const UpdateBlog = () => {
             img8, article8, article8bold
         };
         console.log('updateBlogs',updateBlogs);
-        fetch(`http://localhost:5000/blog/${blogId}`, {
+        fetch(`https://dry-peak-89227.herokuapp.com/blog/${blogId}`, {
              method: 'PUT',
             headers: {
                 'content-type': 'application/json'

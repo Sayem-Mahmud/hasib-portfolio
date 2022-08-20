@@ -74,7 +74,7 @@ const AddBlog = () => {
             img8, article8, article8bold
         };
         console.log('addedBlogs', addedBlogs);
-        fetch('http://localhost:5000/blog', {
+        fetch('https://dry-peak-89227.herokuapp.com/blog', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

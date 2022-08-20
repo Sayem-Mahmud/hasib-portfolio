@@ -82,7 +82,7 @@ const UpdatePortfolio = () => {
             img8, description8, description8bold
         };
         console.log(updateBlogs);
-        fetch(`http://localhost:5000/portfolio/${portfolioId}`, {
+        fetch(`https://dry-peak-89227.herokuapp.com/portfolio/${portfolioId}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

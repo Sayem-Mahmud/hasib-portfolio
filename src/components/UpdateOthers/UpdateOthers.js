@@ -52,7 +52,7 @@ const UpdateOthers = () => {
             name,headerImage,aboutSite,aboutMeImage,aboutMe1stPara,aboutMe2ndPara,downloadCv,email,phone,fax,facebookLink,twitterLink,instagramLink,linkedinLink
         };
         console.log(updateOthers);
-        fetch(`http://localhost:5000/other/${otherId}`,{
+        fetch(`https://dry-peak-89227.herokuapp.com/other/${otherId}`,{
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

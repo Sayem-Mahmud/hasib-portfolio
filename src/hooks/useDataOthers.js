@@ -4,7 +4,7 @@ const UseDataOthers = () => {
     const [others, setOthers] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/others')
+        fetch('https://dry-peak-89227.herokuapp.com/others')
             .then(res => res.json())
             .then(data => {
                 setOthers(data)

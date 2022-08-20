@@ -9,7 +9,7 @@ const UpdateBP = () => {
     const [blogs, setBlogs] = useData();
 
     useEffect(() => {
-        fetch('http://localhost:5000/portfolios')
+        fetch('https://dry-peak-89227.herokuapp.com/portfolios')
             .then(res => res.json())
             .then(data => {
                 setPortfolios(data)
@@ -18,7 +18,7 @@ const UpdateBP = () => {
     }, []);
 
     useEffect(() => {
-        fetch('http://localhost:5000/blogs')
+        fetch('https://dry-peak-89227.herokuapp.com/blogs')
             .then(res => res.json())
             .then(data => {
                 setBlogs(data)
@@ -30,7 +30,7 @@ const UpdateBP = () => {
         const proceed = window.confirm('Are you sure, you want to delete?')
         console.log(id);
         if (proceed) {
-            const url = `http://localhost:5000/blogs/${id}`;
+            const url = `https://dry-peak-89227.herokuapp.com/blogs/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -50,7 +50,7 @@ const UpdateBP = () => {
         const proceed = window.confirm('Are you sure, you want to delete?')
         console.log(id);
         if (proceed) {
-            const url = `http://localhost:5000/portfolios/${id}`;
+            const url = `https://dry-peak-89227.herokuapp.com/portfolios/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

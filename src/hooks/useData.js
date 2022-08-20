@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const useData = () => {
     const [blogs, setBlogs] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/blogs')
+        fetch('https://dry-peak-89227.herokuapp.com/blogs')
             .then(res => res.json())
             .then(data => {
                 console.log(data)
